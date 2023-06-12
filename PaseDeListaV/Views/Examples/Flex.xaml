@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaseDeListaV.Views.Examples.Flex"
              Title="Flex">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <FlexLayout Direction="Row"
+                JustifyContent="Center"
+                AlignItems="Center"
+                AlignContent="SpaceEvenly"
+                Wrap="Wrap">
+        <Button BackgroundColor="Red" Text="Botón 1"/>
+        <Button x:Name="FlexButtonGrid"
+                Clicked="FlexButtonGrid_Clicked"
+                WidthRequest="200"
+                BackgroundColor="Green"
+                Text="Grid"/>
+        <Button BackgroundColor="Blue" Text="Botón 3"/>
+        <Button BackgroundColor="Red" Text="Botón 1"/>
+        <Button BackgroundColor="Green" Text="Botón 2"/>
+        <Button BackgroundColor="Blue" Text="Botón 3"/>
+    </FlexLayout>
 </ContentPage>

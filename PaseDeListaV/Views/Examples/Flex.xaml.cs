@@ -6,4 +6,9 @@ public partial class Flex : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    async void FlexButtonGrid_Clicked(System.Object sender, System.EventArgs e)
+    {
+		await Shell.Current.GoToAsync("//GridLayout");
+    }
 }
